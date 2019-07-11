@@ -12,13 +12,12 @@ html {
 }
 
 body {
-
     margin: 0 auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: 'Quicksand', sans-serif;
     letter-spacing: 0.1rem;
     font-size: 1.8rem;
     position: absolute;
@@ -33,8 +32,14 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    text-align: center;
 }
+
+.container span {
+    color: gray;
+    font-weight: 500;
+}
+
 
 h1 {
     text-align: center;
@@ -45,6 +50,7 @@ td {
     border: 2px solid gray;
     width: 100px;
     height: 100px;
+    font-weight: 700;
     text-align: center;
     vertical-align: middle;
     font-size: 5rem;
@@ -84,19 +90,28 @@ table {
 
 button {
     font-size: 1.8rem;
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(0, 0, 0, 0.7);
     color: #fff;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 500;
     letter-spacing: 0.2rem;
-    padding: 1rem 8rem;
+    padding: 1.2rem;
     border: none;
     transition: all 0.25s;
 }
 
 button:hover {
-    background-color: rgba(0, 0, 0, 1);
+    background-color: rgba(0, 0, 0, 0.9);
     color: #ccc;
     cursor: pointer;
+    border-radius: 10px;
     transition: all 0.25s;
 
+}
+
+.win {
+    background-color: rgb(65, 199, 65);
+    color: #fff;
+    font-size: 6.5rem;
+    transition: all 0.5s;
 }

@@ -20,7 +20,7 @@ function getWinner() {
     if (c3.innerHTML !== "" && c3.innerHTML === c5.innerHTML && c3.innerHTML === c7.innerHTML)
         selectWinnerCells(c3, c5, c7);
     if (c4.innerHTML !== "" && c4.innerHTML === c5.innerHTML && c4.innerHTML === c6.innerHTML)
-        selectWinnerCells(c1, c4, c7);
+        selectWinnerCells(c4, c5, c6);
     if (c7.innerHTML !== "" && c7.innerHTML === c8.innerHTML && c7.innerHTML === c9.innerHTML)
         selectWinnerCells(c7, c8, c9);
 }

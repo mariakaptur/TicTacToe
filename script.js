@@ -1,5 +1,5 @@
 var cells = document.querySelectorAll('.cell'),
-    X_or_O = 0;
+    player = "x";
 var turn = document.getElementById("turn");
 
 turn.innerHTML = 'Play with a friend';
@@ -29,16 +29,16 @@ function playGame() {
     for (var i = 0; i < cells.length; i++) {
         cells[i].onclick = function () {
             if (this.innerHTML !== "X" && this.innerHTML !== "O") {
-                if (X_or_O % 2 === 0) {
+                if (player === "x") {
                     this.innerHTML = "X";
                     turn.innerHTML = "Your turn : O";
                     getWinner();
-                    X_or_O += 1;
+                    player = "o"
                 } else {
                     this.innerHTML = "O";
                     turn.innerHTML = "Your turn : X";
                     getWinner();
-                    X_or_O += 1;
+                    player = "x"
                 }
             }
         }
@@ -62,6 +62,7 @@ function replay() {
         turn.innerHTML = 'Play with a friend';
         turn.style.fontWeight = "normal";
         cells[i].classList.remove('win');
+        player = "x";
         playGame();
     }
 }

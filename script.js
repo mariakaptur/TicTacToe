@@ -10,7 +10,7 @@ function getWinner() {
     if (c1.innerHTML !== "" && c1.innerHTML === c2.innerHTML && c1.innerHTML === c3.innerHTML)
         selectWinnerCells(c1, c2, c3);
     if (c1.innerHTML !== "" && c1.innerHTML === c4.innerHTML && c1.innerHTML === c7.innerHTML)
-        selectWinnerCells(c1, c4, c7);
+        selectWinnerCells(c1, c4, c7);        
     if (c1.innerHTML !== "" && c1.innerHTML === c5.innerHTML && c1.innerHTML === c9.innerHTML)
         selectWinnerCells(c1, c5, c9);
     if (c2.innerHTML !== "" && c2.innerHTML === c5.innerHTML && c2.innerHTML === c8.innerHTML)
@@ -19,6 +19,8 @@ function getWinner() {
         selectWinnerCells(c3, c6, c9);
     if (c3.innerHTML !== "" && c3.innerHTML === c5.innerHTML && c3.innerHTML === c7.innerHTML)
         selectWinnerCells(c3, c5, c7);
+    if (c4.innerHTML !== "" && c4.innerHTML === c5.innerHTML && c4.innerHTML === c6.innerHTML)
+        selectWinnerCells(c1, c4, c7);
     if (c7.innerHTML !== "" && c7.innerHTML === c8.innerHTML && c7.innerHTML === c9.innerHTML)
         selectWinnerCells(c7, c8, c9);
 }
